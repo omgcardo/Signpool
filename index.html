@@ -1,10 +1,96 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <title>SIGNPOOL</title>
-</head>
-<body>
-  <h1>Welkom bij SIGNPOOL</h1>
-  <p>Adverteer overal – muren, ramen, gevels!</p>
-</body>
-</html>
+import React from "react";
+
+export default function SignpoolHome() {
+  return (
+    <div className="min-h-screen bg-[#1E40AF] text-white font-sans">
+      <header className="flex justify-between items-center p-6 bg-[#111827]">
+        <h1 className="text-3xl font-bold tracking-wide">SIGNPOOL</h1>
+        <nav className="flex gap-6 text-sm">
+          <a href="#offer" className="hover:text-[#10B981]">Aanbieden</a>
+          <a href="#advertise" className="hover:text-[#10B981]">Adverteren</a>
+          <a href="#enterprise" className="hover:text-[#10B981]">Enterprise</a>
+          <a href="#dashboard" className="hover:text-[#10B981]">Dashboard</a>
+          <a href="#contact" className="hover:text-[#10B981]">Contact</a>
+        </nav>
+      </header>
+
+      <section className="flex flex-col items-center justify-center text-center px-6 py-24">
+        <h2 className="text-4xl md:text-6xl font-bold mb-4">Claim de stad.<br />Adverteer overal.</h2>
+        <p className="text-lg max-w-xl mb-8 text-[#F3F4F6]">
+          SIGNPOOL is hét platform om ongebruikte muren, ramen en gevels om te toveren tot winstgevende advertentieruimte.
+        </p>
+        <div className="flex gap-4">
+          <button className="bg-[#10B981] text-black px-6 py-3 rounded-full font-semibold">Start met aanbieden</button>
+          <button className="border border-white px-6 py-3 rounded-full font-semibold">Bekijk locaties</button>
+        </div>
+      </section>
+
+      <section className="bg-white text-black px-6 py-16" id="offer">
+        <h3 className="text-3xl font-bold mb-6">Voor verhuurders</h3>
+        <ul className="mb-6 list-disc ml-5 space-y-2">
+          <li>Upload je locatie met Google Maps en foto's</li>
+          <li>Voeg afmetingen, type (muur, raam) en ondergrond toe</li>
+          <li>Stel prijs in per dag/week/maand</li>
+          <li>Beheer beschikbaarheid met een kalender</li>
+          <li>Ontvang betalingen automatisch via Stripe</li>
+        </ul>
+        <button className="bg-[#1E40AF] text-white px-6 py-3 rounded-full font-semibold">Meld je locatie aan</button>
+      </section>
+
+      <section className="bg-[#F3F4F6] text-black px-6 py-16" id="advertise">
+        <h3 className="text-3xl font-bold mb-6">Voor adverteerders</h3>
+        <ul className="mb-6 list-disc ml-5 space-y-2">
+          <li>Zoek locaties op kaart met filters voor zichtbaarheid, prijs en ondergrond</li>
+          <li>Selecteer één of meerdere locaties tegelijk</li>
+          <li>Upload je design + formaten per locatie</li>
+          <li>Kies print + montageoptie, periode en bevestig</li>
+          <li>Betaal veilig via iDEAL, kaart of factuur</li>
+        </ul>
+        <button className="bg-[#10B981] text-black px-6 py-3 rounded-full font-semibold">Start je campagne</button>
+      </section>
+
+      <section className="bg-white px-6 py-16" id="enterprise">
+        <h3 className="text-3xl font-bold mb-6">Enterprise campagnes</h3>
+        <ul className="mb-6 list-disc ml-5 space-y-2">
+          <li>Boek 10+ locaties tegelijk met een paar klikken</li>
+          <li>Upload één ontwerp en wij schalen het automatisch</li>
+          <li>Begeleiding door accountmanager en statistieken</li>
+        </ul>
+        <button className="bg-[#1E40AF] text-white px-6 py-3 rounded-full font-semibold">Enterprise aanvraag</button>
+      </section>
+
+      <section className="bg-[#F3F4F6] text-black px-6 py-16" id="dashboard">
+        <h3 className="text-3xl font-bold mb-6">Platformmodules</h3>
+        <div className="grid md:grid-cols-2 gap-6">
+          <div className="bg-white shadow-md rounded-xl p-6">
+            <h4 className="text-xl font-semibold mb-2">Locatie-upload (verhuurders)</h4>
+            <p>Uploadlocatie met foto's, type, afmetingen, prijs, beschikbaarheid en bankgegevens.</p>
+          </div>
+          <div className="bg-white shadow-md rounded-xl p-6">
+            <h4 className="text-xl font-semibold mb-2">Zoek- en selectiemodule (adverteerders)</h4>
+            <p>Filter op stad, prijs, type oppervlak. Selecteer meerdere locaties en upload design.</p>
+          </div>
+          <div className="bg-white shadow-md rounded-xl p-6">
+            <h4 className="text-xl font-semibold mb-2">Campagne afronding + betaling</h4>
+            <p>Overzicht van locaties, prijzen, uploads. Betaalopties via iDEAL/creditcard of factuur.</p>
+          </div>
+          <div className="bg-white shadow-md rounded-xl p-6">
+            <h4 className="text-xl font-semibold mb-2">Notificaties, beheer & rapportages</h4>
+            <p>Beheer alles in je dashboard met meldingen, statusupdates en downloads.</p>
+          </div>
+        </div>
+      </section>
+
+      <footer className="bg-[#111827] text-white text-sm px-6 py-8">
+        <div className="flex flex-col md:flex-row justify-between items-center">
+          <p>© 2025 SIGNPOOL. Alle rechten voorbehouden.</p>
+          <div className="flex gap-4 mt-4 md:mt-0">
+            <a href="#">Privacy</a>
+            <a href="#">Algemene voorwaarden</a>
+            <a href="#">Instagram</a>
+          </div>
+        </div>
+      </footer>
+    </div>
+  );
+}
