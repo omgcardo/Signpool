@@ -1,2 +1,3 @@
-# Signpool
-Internationaal advertentieplatform voor het huren van muren &amp; ramen
+# SIGNPOOL
+
+Internationaal advertentieplatform voor het huren van muren & ramen.
